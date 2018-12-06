@@ -2,10 +2,18 @@ package fr.videoclub;
 
 public class Movie {
 
+    int getFrequentRenterPoints(int daysRented) {
+        return price.getFrequentRenterPoints(daysRented);
+    }
+
     abstract static class Price {
         abstract int getPriceCode();
 
         abstract double getCharge(int daysRented);
+
+        int getFrequentRenterPoints(int daysRented) {
+            return 1;
+        }
     }
 
     static class ChildrenPrice extends Price {
@@ -30,6 +38,12 @@ public class Movie {
         @Override
         double getCharge(int daysRented) {
             return daysRented * 3;
+        }
+
+        @Override
+        int getFrequentRenterPoints(int daysRented) {
+            return (daysRented > 1) ? 2: 1;
+
         }
     }
 
