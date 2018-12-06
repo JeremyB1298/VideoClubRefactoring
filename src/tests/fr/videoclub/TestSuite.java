@@ -21,7 +21,7 @@ public class TestSuite {
 						"Les émotifs anonymes", "Le nom des gens", "Cars");
 				int[]priceCodes = {Movie.REGULAR, Movie.REGULAR, Movie.REGULAR,
 						Movie.REGULAR, Movie.REGULAR, Movie.NEW_RELEASE, Movie.NEW_RELEASE,
-						Movie.NEW_RELEASE,Movie.REGULAR, Movie.CHILDRENS};
+						Movie.NEW_RELEASE,Movie.REGULAR, Movie.CHILDREN};
 				
 				List<Movie> movies = new ArrayList<Movie>();
 						
